@@ -4,7 +4,7 @@ Created on Mon May 11 16:16:55 2020
 
 @author: elsir
 """
-
+from time import sleep
 from mpl_toolkits import mplot3d
 import numpy as np
 import math
@@ -87,14 +87,22 @@ if __name__ == '__main__':
         z_pala = [h, h]
         
         '----------------------pinces-------------------------------------'
-        x_bPala1 = [x, x+x2]
-        y_bPala1 = [-arm/3, -arm/3]
-        z_bPala1 = [h, h+h2]
+        x_base1 = [x, x+x2]
+        y_base1 = [-arm/3, -arm/3]
+        z_base1 = [h, h+h2]
         
-
-        x_bPala2 = [x, x-x2]
-        y_bPala2 = [-arm/3, -arm/3]
-        z_bPala2 = [h, h-h2]
+        x_base2 = [x, x-x2]
+        y_base2 = [-arm/3, -arm/3]
+        z_base2 = [h, h-h2]
+        
+        x_pala1 = [x+x2, x+x2]
+        y_pala1 = [-arm/3, (-arm/3) - 4]
+        z_pala1 = [h+h2, h+h2]
+        
+        x_pala2 = [x-x2, x-x2]
+        y_pala2 = [-arm/3,(-arm/3) - 4]
+        z_pala2 = [h-h2, h-h2]
+        
         'Marca desde la posició del brac fins al terra vert---------------'
     
         '-----------------------PLOT--------------------------------------3'
@@ -108,8 +116,10 @@ if __name__ == '__main__':
             ax.plot3D(x_mark,y_mark,z_mark,'green')
         ax.plot3D(x_line,y_line,z_line,'blue')
         ax.plot3D(x_pala,y_pala,z_pala,'blue')
-        ax.plot3D(x_bPala1,y_bPala1,z_bPala1,'blue')
-        ax.plot3D(x_bPala2,y_bPala2,z_bPala2,'blue')
+        ax.plot3D(x_base1,y_base1,z_base1,'Yellow')
+        ax.plot3D(x_base2,y_base2,z_base2,'Yellow')
+        ax.plot3D(x_pala1,y_pala1,z_pala1,'Yellow')
+        ax.plot3D(x_pala2,y_pala2,z_pala2,'Yellow')
         
         plt.show()
         print('Coordenada X: ',x, '/ Coordenada Y :', h )

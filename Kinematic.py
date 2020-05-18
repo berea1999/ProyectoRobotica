@@ -73,14 +73,28 @@ if __name__ == '__main__':
         x = getX(arm,ang)
         h = getY(x, arm)
         
+        x2 = getX(3, ang)
+        h2 = getY(x2, 3)
         'utilitzem les cordenades calculades per crear la posició del brac'
+        
+        '-----------------------Brac--------------------------------------'
         x_line = [0,x]
         y_line = [0,0]
         z_line = [0,h]
-        
+        '--------------------brac2----------------------------------------'
         x_pala = [x, x]
         y_pala = [0, -arm/3]
         z_pala = [h, h]
+        
+        '----------------------pinces-------------------------------------'
+        x_bPala1 = [x, x+x2]
+        y_bPala1 = [-arm/3, -arm/3]
+        z_bPala1 = [h, h+h2]
+        
+
+        x_bPala2 = [x, x-x2]
+        y_bPala2 = [-arm/3, -arm/3]
+        z_bPala2 = [h, h-h2]
         'Marca desde la posició del brac fins al terra vert---------------'
     
         '-----------------------PLOT--------------------------------------3'
@@ -94,6 +108,8 @@ if __name__ == '__main__':
             ax.plot3D(x_mark,y_mark,z_mark,'green')
         ax.plot3D(x_line,y_line,z_line,'blue')
         ax.plot3D(x_pala,y_pala,z_pala,'blue')
+        ax.plot3D(x_bPala1,y_bPala1,z_bPala1,'blue')
+        ax.plot3D(x_bPala2,y_bPala2,z_bPala2,'blue')
         
         plt.show()
         print('Coordenada X: ',x, '/ Coordenada Y :', h )

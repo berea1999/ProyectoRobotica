@@ -34,8 +34,6 @@ while True:
 
         (H, W) = frame.shape[:2]
 		# START RECOGNITION #
-        print(H)
-        print(W)
         blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (416, 416), swapRB=True, crop=False)
         net.setInput(blob)
         layerOutputs = net.forward(ln)
@@ -90,16 +88,16 @@ while True:
                 cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
                 object_image_sensor=h/resolution
                 object_size=(distancia*object_image_sensor/4.15)/10
-                text = "{}: {:.4f}".format(LABELS[classIDs[i]], confidences[i])
+                text = "{}: {:.2f}".format(LABELS[classIDs[i]], confidences[i])
                 print("object----------------------------------")
                 print(text)
                 print('object real size cm-----------------------------')
                 print(object_size)
-                if object_size>=17,5:
+                if object_size>=17.5:
                     accion='seguir buscando';
-                elif (object_size<17,5) and (object_size>=10):
+                elif (object_size<17.5) and (object_size>=10):
                     accion='empujar';
-                elif (object_size<10)and(object_size>=1,5):
+                elif (object_size<10)and(object_size>=1.5):
                     accion='coger';
                     if distancia>150:
                         accion='acercarse';

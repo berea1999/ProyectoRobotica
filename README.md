@@ -12,3 +12,7 @@ y numpy para poder ejecutar el proyecto.
 Este código está calibrada con nuestra cámara puede ser que haya diferencias en el tamaño del objeto con respecto al que nos
 sale en nuestras simulaciones.
 
+*Arm Function*
+
+En esta carpeta se encuentra el archivo Python que lleva la simulacion de las posiciones del brazo segun los angulos deseados, todo esta en un unico archivo. 
+Para su ejecucción son necesarias las librerias mplot3d (from mpl_toolkits), numpy, math, matplotlib.pyplot, matplotlib.patches

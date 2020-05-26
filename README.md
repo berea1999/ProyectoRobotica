@@ -16,3 +16,13 @@ sale en nuestras simulaciones.
 
 En esta carpeta se encuentra el archivo Python que lleva la simulacion de las posiciones del brazo segun los angulos deseados, todo esta en un unico archivo. 
 Para su ejecucción son necesarias las librerias mplot3d (from mpl_toolkits), numpy, math, matplotlib.pyplot, matplotlib.patches
+
+
+"Unity"
+Dins de la carpeta Unity tenim el Codi de la Simulació on robem la part per editar el projecte i per altra part trobem l'executable de la simulació, per executar la simulació hem de clickar a "Robotica_nuevaversion.exe".
+
+"Funcionament simulació Unity:"
+Amb les fletxes es mou i gira el robot. (Davant, enrere, dreta, esquerra)
+El braç té 2 posicions, amb la "w" puja el braç i amb la "s" baixa el braç.
+Quan tenim un objecte a la posició de la pinça presionem "e" i agafa l'objecte, si tornem a pitjar "e" aleshores la pinça deixa l'objecte.
+Per agafar un objecte i guardar-lo dins el robot anirem on es troba l'objecte, l'agafarem "e" i "w" per pujar-lo amb el braç, un cop és a dalt fem "e" i després "s", si el braç no és abaix el robot no es mourà cap endavant ni enrere per seguretat.

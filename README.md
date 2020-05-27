@@ -17,6 +17,14 @@ sale en nuestras simulaciones.
 En esta carpeta se encuentra el archivo Python que lleva la simulacion de las posiciones del brazo segun los angulos deseados, todo esta en un unico archivo. 
 Para su ejecucción son necesarias las librerias mplot3d (from mpl_toolkits), numpy, math, matplotlib.pyplot, matplotlib.patches
 
+*Path Planning*
+
+En la carpeta de path planning se encuentran los dos algoritmos, el A* y el PRM.
+
+- A*: Simulación que require de PyGame.
+- PRM: Requiere shapely.
+
+*3D Simulation*
 
 "Unity"
 Dins de la carpeta Unity tenim el Codi de la Simulació on robem la part per editar el projecte i per altra part trobem l'executable de la simulació, per executar la simulació hem de clickar a "Robotica_nuevaversion.exe".

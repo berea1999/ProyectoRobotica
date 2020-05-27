@@ -1,5 +1,9 @@
 # iClean
 
+# Descripció del projecte
+Descripció del projecte
+És un robot amb un estil semblant a un camió de la brossa però amb 3 rodes en comptes de 4, una càmera i un sensor d’ultraso a la part  posterior  i un braç robòtic a la part dreta.  La funció del robot és netejar d’obstacles una àrea delimitada. Segons els tamany de l’objecte que es va trobant, el robot té una funció o una altra, hem dividit els tamanys  en 4 seccions: tamany molt petit, petit, mitjà i gran. En el cas que es trobi un objecte molt petit el robot li passarà per sobre (el xafa) suposant que és un insecte i no hauria d’estar a casa; En el cas que l’objecte no sigui tan petit el robot té l’ordre de posar-se al davant del objecte de manera que el pugui agafar amb les pinces del braç , un cop el té agafat el braç puja uns 130º i deixa l’objecte a la capsa buida que carrega sobre. En cas que l’objecte sigui mitjà el robot l’ha d’emputjar o apartar de manera que quedi fora de l’àrea delimitada. Per últim, quan es troba un objecte més gran de l’establert considerem que l’objecte és massa gran i no podem fer res, aleshores el robot l’esquiva i segueix en busca d’objectes dins de l’àrea.
+
 
 # *Object_detector*
 
